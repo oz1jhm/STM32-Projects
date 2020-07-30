@@ -23,16 +23,39 @@
             "Moveable": false
           },
           {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Pressed": "__designer\\Blue_Buttons_Round_medium_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_medium.png",
             "Alpha": 255,
-            "Style": "Style4",
+            "Style": "Style7",
             "Name": "button1",
             "X": 185,
             "Y": 42,
-            "Width": 170,
+            "Width": 230,
             "Height": 60,
             "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 71,
+            "Y": 157,
+            "Width": 200,
+            "Height": 25,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -47,6 +70,12 @@
       }
     ],
     "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      }
+    ],
     "Name": "STM32F746_TOUCHGFX_test1",
     "Resolution": {
       "Width": 480,

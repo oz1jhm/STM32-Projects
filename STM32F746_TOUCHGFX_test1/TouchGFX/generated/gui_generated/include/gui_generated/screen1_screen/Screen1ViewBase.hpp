@@ -10,6 +10,9 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/RadioButton.hpp>
+#include <touchgfx/widgets/RadioButtonGroup.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -17,6 +20,14 @@ public:
     Screen1ViewBase();
     virtual ~Screen1ViewBase() {}
     virtual void setupScreen();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void hjhfunc()
+    {
+        // Override and implement this function in Screen1
+    }
 
 protected:
     FrontendApplication& application() {
@@ -29,8 +40,23 @@ protected:
     touchgfx::Box box1;
     touchgfx::Button button1;
     touchgfx::TextArea textArea1;
+    touchgfx::ButtonWithLabel buttonWithLabel1;
+    touchgfx::RadioButton radioButton1;
+    touchgfx::RadioButton radioButton2;
+    touchgfx::RadioButton radioButton3;
+    touchgfx::RadioButtonGroup<3> radioButtonGroup1;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

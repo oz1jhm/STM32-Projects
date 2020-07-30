@@ -28,8 +28,8 @@
             "Alpha": 255,
             "Style": "Style7",
             "Name": "button1",
-            "X": 185,
-            "Y": 42,
+            "X": 16,
+            "Y": 22,
             "Width": 230,
             "Height": 60,
             "Type": "Button",
@@ -51,8 +51,8 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Name": "textArea1",
-            "X": 71,
-            "Y": 157,
+            "X": 22,
+            "Y": 111,
             "Width": 200,
             "Height": 25,
             "Type": "TextArea",
@@ -61,9 +61,126 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId2",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style4",
+            "Name": "buttonWithLabel1",
+            "X": 265,
+            "Y": 22,
+            "Width": 170,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
+            "Style": "Style4",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "radioButton1",
+            "X": 0,
+            "Y": 0,
+            "Width": 44,
+            "Height": 44,
+            "Type": "RadioButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "Selected": true,
+            "Deselectable": false,
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
+            "Style": "Style4",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "radioButton2",
+            "X": 71,
+            "Y": 192,
+            "Width": 44,
+            "Height": 44,
+            "Type": "RadioButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "radioButton3",
+            "X": 128,
+            "Y": 191,
+            "Width": 44,
+            "Height": 44,
+            "Type": "RadioButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "hjhinter",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "button1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "hjhfunc",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionNone"
+            }
+          }
+        ],
         "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
@@ -73,6 +190,10 @@
     "TextEntries": [
       {
         "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
         "IsResource": false
       }
     ],
